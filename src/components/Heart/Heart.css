@@ -1,0 +1,20 @@
+.Liked {
+  z-index: 15;
+  position: absolute;
+  top: 350px;
+  left: 1014px;
+  bottom: 200px;
+}
+
+.Unliked {
+  background-color: white;
+  z-index: 15;
+  position: absolute;
+  top: 350px;
+  left: 1014px;
+  bottom: 200px;
+}
+
+.Liked:hover {
+  cursor: pointer;
+}

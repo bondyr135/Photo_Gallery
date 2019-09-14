@@ -1,0 +1,28 @@
+h1, p {
+  font-family: Lato;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+html {
+  width: 100%;
+  background: rgb(241, 233, 233);
+  height: 101px;
+  margin: 0;
+  padding: 0;
+  right: 0px;
+}
+
+body {
+  height: 110%;
+  width: 100%;
+  right: 0px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}

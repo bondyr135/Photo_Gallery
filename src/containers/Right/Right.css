@@ -1,0 +1,8 @@
+.navRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightNav {
+  border-radius: 5px;
+}

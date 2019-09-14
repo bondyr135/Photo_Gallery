@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background: rgb(230, 225, 225);
+  min-height: 50px;
+  align-items: center;
+  padding: none;
+  width: 100%;
+  z-index: 15;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  color: rgb(5, 2, 2);
+  list-style: none;
+  font-size: 30px;
+}
+
+.Link {
+  color: rgb(145, 53, 145);
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.selected {
+  color: rgb(209, 108, 40);
+  text-decoration: underline;
+  font-weight: bold;
+}
+

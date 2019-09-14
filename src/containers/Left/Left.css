@@ -1,0 +1,8 @@
+.navLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftNav {
+  border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+
+
+.Photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 90%; 
+  width: 75%;
+  max-width: 75%;
+  max-height: 90%;
+  top: 5%;
+  bottom: 5%;
+  left: 0;
+} 

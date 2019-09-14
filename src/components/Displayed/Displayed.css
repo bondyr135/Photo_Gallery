@@ -1,0 +1,28 @@
+
+.Displayed {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: center;
+  border: 6px solid purple;
+  max-height: 370px;
+  z-index: 10;
+  background-color: blueviolet;
+}
+
+
+p {
+  justify-content: space-around;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+  position: relative;
+}
+
+
+.Credit {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  align-self: flex-start;
+}

@@ -1,0 +1,44 @@
+.Likes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: start;
+    align-content: spcace-around;
+    overflow: scroll;
+    background: rgb(241, 233, 233);
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 532px;
+    min-height: 100%;
+    margin: 0px; 
+}
+
+.like {
+    width: 230px;
+    max-height: 300px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid rgb(12, 8, 8);
+    box-shadow: 0 2px 3px #ccc;
+    background-color:#ddd;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.like:hover {
+  cursor: pointer;
+}
+
+.deleteLike {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: cyan;
+}
+
+.no_likes {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-top: 100px;
+  font-size: 27px;
+}

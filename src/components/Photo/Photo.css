@@ -1,0 +1,17 @@
+
+.Photo {
+  border: 3px solid rgb(15, 15, 15);
+  height: 90%;
+  width: 10%;
+  max-width: 40%;
+  max-height: 100%;
+  margin: 20px;
+  float: left;
+  padding: 1px;
+  background-color: rgb(120, 48, 161);
+  margin-top: 0px;
+}
+
+.Photo:hover {
+  cursor: pointer;
+}
