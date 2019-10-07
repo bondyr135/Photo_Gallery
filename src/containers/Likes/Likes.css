@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     align-content: spcace-around;
     overflow: scroll;
     background: rgb(241, 233, 233);

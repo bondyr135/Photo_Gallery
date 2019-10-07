@@ -21,7 +21,6 @@ class Displayed extends Component {
           alt={this.props.title}
           id={this.props.id}
           src={this.props.src}
-          /*href={this.props.href || this.props.src}*/
           loader={<Spinner />}
         />
 

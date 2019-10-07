@@ -38,7 +38,6 @@ class Layout extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
     if (this.props.photo !== null && this.props.photo.id !== '') {
       this.setState(state => {
         return {
@@ -65,10 +64,8 @@ class Layout extends Component {
   }
 
   doLike() {
-    console.log(this.props.photo);
     window.localStorage.setItem(this.props.photo.id, JSON.stringify({
       id: this.props.photo.id,
-      //*href: this.props.photo.href,*//
       src: this.props.src,
       title: this.props.photo.title
     }));
@@ -86,7 +83,6 @@ class Layout extends Component {
   }
 
   render() {
-    console.log(this.props.photo, 'LAYOUT');
     return (
       <div className="Layout" >
 

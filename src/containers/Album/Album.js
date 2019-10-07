@@ -7,10 +7,7 @@ import { url, key, nextUrl } from '../../Unsplash/Unsplash';
 import Layout from '../Layout/Layout';
 import './Album.css';
 
-const HREF = 'https://unsplash.com/photos';
-const ADDRESS = '/pictures';
 
-// C:\Users\Ravid\Desktop\RavidDT\Coding\Projects\jp1_Album\src\pictures\alex-azabache-A59RzUpx9jA-unsplash.jpg
 class Album extends Component {
   constructor(props) {
     super(props);
@@ -55,24 +52,26 @@ class Album extends Component {
   }
 
   showDemiPhotos(images) {
-    const parsedPhotos = images.map(img => {
-
-      let imgSRC = img.src;
-      let imgDetails = img.src.substring(2).split('-');
+    const parsedPhotos = images.map((img, index) => {
+      let field =  `picture${index + 1}`;
+      
+      let imgSRC = img.src[field];
+      
+      let imgDetails = imgSRC.substring(14).split('-');
       imgDetails.pop();
 
       let imgKey = imgDetails.pop();
-      let imgTitle = imgDetails.join(' ');;
+      let imgTitle = imgDetails.join(' ');
       
       return {
-        key: imgKey,
+        key: imgSRC,
         title: imgTitle,
         alt: imgTitle,
         id: imgKey,
-        src: `${imgSRC}`
+        src: imgSRC
       }
     });
-    console.log(parsedPhotos[0]);
+    
     const centerPhoto = Object.assign({}, parsedPhotos[0]);
     this.setState({
       displayedPhoto: centerPhoto,
@@ -154,7 +153,7 @@ class Album extends Component {
   }
 
   render() {
-    console.log(this.state.displayedPhoto);
+    
     return (
       <div className="Album">
         <Layout

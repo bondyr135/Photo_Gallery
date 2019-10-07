@@ -15,7 +15,7 @@ const likes = (props) => {
           <img
             id={item.id}
             className="like"
-            src={item.href}
+            src={item.src}
             href={item.href}
             alt={item.alt}
             title={item.title ? item.title : null}

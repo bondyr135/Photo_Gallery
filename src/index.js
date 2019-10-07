@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const passLikes = [];
+    let passLikes = [];
     const keys = Object.keys(window.localStorage);
     for (let i = 0; i < keys.length; i++) {
       if (keys[i] !== 'editorHasEmittedBundle' && keys[i] !== "editorLastConnected" && keys[i] !== "firebase:host:stackblitz.firebaseio.com") {
