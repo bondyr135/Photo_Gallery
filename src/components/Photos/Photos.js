@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Photo from '../Photo/Photo';
-import Spinner from '../UI/Spinner/Spinner';
-import './Photos.css';
+import Photo from "../Photo/Photo";
+import Spinner from "../UI/Spinner/Spinner";
+import "./Photos.css";
 
 const photos = (props) => {
   var parsedPhotos;
-  
+
+  // If there are actually photos received as props
   if (props.photos && props.photos.length > 0) {
     parsedPhotos = props.photos.map((photo) => {
-      
       return (
         <Photo
           key={photo.id}
@@ -19,17 +19,18 @@ const photos = (props) => {
           id={photo.id}
           clicked={(chosenPhotoProps) => props.clicked(chosenPhotoProps)}
         />
-      )
-    })
+      );
+    });
   } else {
-    parsedPhotos =  <Spinner />;
+    // No photos received as props, returning spinner for loading
+    parsedPhotos = <Spinner />;
   }
 
   return (
     <div className="Photos" key="Photos">
       {parsedPhotos}
     </div>
-  )
-}
+  );
+};
 
 export default photos;

@@ -1,14 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import './Likes.css';
+import "./Likes.css";
 
 const likes = (props) => {
   let show = [];
 
-
   if (props.likes.length > 0) {
-    show = props.likes.map((id, i) => {
+    // Mapping all liked photos into links holding an img
+    show = props.likes.map((id) => {
       let item = JSON.parse(window.localStorage.getItem(id));
       return (
         <NavLink exact to={`/likes/${item.id}`} key={item.id}>
@@ -22,17 +22,13 @@ const likes = (props) => {
             onClick={() => props.click(item)}
           />
         </NavLink>
-      )
+      );
     });
   } else {
-    show = <p className="no_likes">Time to start liking some photos, right?</p>
+    show = <p className="no_likes">Time to start liking some photos, right?</p>;
   }
 
-  return (
-    <div className="Likes">
-      {show}
-    </div>
-  )
-}
+  return <div className="Likes">{show}</div>;
+};
 
 export default likes;
